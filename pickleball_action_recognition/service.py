@@ -11,7 +11,7 @@ from src.pose import PoseExtractor
 from src.utils import get_device
 
 # Folder that holds models/best_cnn_bilstm.pt (the --project_dir you trained with).
-PROJECT_DIR = os.environ.get("RALLY_PROJECT_DIR", "runs")
+PROJECT_DIR = str(Path(__file__).resolve().parent / "runs")
 
 
 @st.cache_resource(show_spinner="Loading model...")
