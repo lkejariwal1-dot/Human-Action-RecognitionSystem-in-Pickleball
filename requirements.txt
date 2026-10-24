@@ -1,7 +1,7 @@
 # Install PyTorch FIRST from https://pytorch.org/get-started/locally (pick your CUDA / CPU build).
 # On Google Colab, PyTorch is already installed.
 ultralytics>=8.2
-opencv-python
+opencv-python-headless
 numpy
 pandas
 scikit-learn
