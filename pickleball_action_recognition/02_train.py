@@ -91,9 +91,9 @@ def main():
             bad += 1
         print(f"Epoch {epoch:3d} | train loss {tl/tn:.3f} acc {tc/tn:.3f} | "
               f"val loss {v['loss']:.3f} acc {v['acc']:.3f} F1 {v['f1']:.3f}{flag}")
-        if bad >= args.patience:
-            print(f"Early stopping (no val F1 improvement for {args.patience} epochs).")
-            break
+        # if bad >= args.patience:
+        #     print(f"Early stopping (no val F1 improvement for {args.patience} epochs).")
+        #     break
 
     hist = pd.DataFrame(history)
     hist.to_csv(paths.results / "training_history.csv", index=False)
