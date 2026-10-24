@@ -1,0 +1,403 @@
+/* ==========================================================================
+   Rally design system
+   Custom classes start with "rl-". Streamlit's own internal selectors
+   (data-testid, st-key-*) can change between versions, so they are all
+   kept in this one file.
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Young+Serif&display=swap');
+
+:root {
+  --cream: #F1F0E7;
+  --cream-deep: #E9E8DC;        /* a slightly deeper tint of the cream */
+  --sage: #A6B69A;
+  --sage-soft: rgba(166, 182, 154, 0.28);
+  --charcoal: #42483F;
+  --text: #30372F;
+  --text-2: #697363;
+  --border: #D8D9CE;
+  --line-faint: rgba(66, 72, 63, 0.16);
+  --font-display: 'Young Serif', Georgia, 'Times New Roman', serif;
+  --font-body: 'Figtree', system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+
+/* ---------- Base ---------- */
+html, body, .stApp,
+[data-testid="stMarkdownContainer"],
+button, input, textarea, label {
+  font-family: var(--font-body);
+}
+.stApp { background: var(--cream); color: var(--text); }
+
+#MainMenu, footer,
+[data-testid="stAppDeployButton"],
+[data-testid="stDecoration"],
+[data-testid="stHeaderActionElements"] { display: none !important; }
+[data-testid="stHeader"] { background: transparent; }
+
+.block-container,
+[data-testid="stMainBlockContainer"] {
+  max-width: 1040px;
+  padding: 3rem 2rem 5rem;
+}
+
+.stApp a:focus-visible,
+.stApp button:focus-visible {
+  outline: 2px solid var(--charcoal);
+  outline-offset: 2px;
+}
+
+/* ---------- Typography (Young Serif only has weight 400) ---------- */
+.stApp .rl-display {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(2.7rem, 6vw, 4.25rem);
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  margin: 0 0 1.1rem;
+  padding: 0;
+  color: var(--charcoal);
+}
+.stApp .rl-title {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  line-height: 1.1;
+  margin: 0 0 0.75rem;
+  padding: 0;
+  color: var(--charcoal);
+}
+.stApp .rl-h2 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.2;
+  margin: 0 0 0.6rem;
+  padding: 0;
+  color: var(--charcoal);
+}
+.stApp .rl-h3 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.25;
+  margin: 0 0 0.4rem;
+  padding: 0;
+  color: var(--charcoal);
+}
+.stApp .rl-lead {
+  max-width: 36rem;
+  margin: 0;
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: var(--text-2);
+}
+.stApp .rl-copy {
+  max-width: 34rem;
+  margin: 0 0 1rem;
+  line-height: 1.65;
+  color: var(--text);
+}
+.stApp .rl-muted {
+  margin: 0;
+  line-height: 1.55;
+  color: var(--text-2);
+}
+.stApp .rl-note {
+  margin: 0.75rem 0 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--text-2);
+}
+
+/* ---------- Sidebar ---------- */
+[data-testid="stSidebar"] {
+  background: var(--cream-deep);
+  border-right: 1px solid var(--border);
+}
+
+.stApp .rl-brand { padding: 0.25rem 0.5rem 1.75rem; }
+.stApp .rl-brand-name {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 1.9rem;
+  line-height: 1;
+  margin: 0;
+  color: var(--charcoal);
+}
+.stApp .rl-brand-sub {
+  margin: 0.45rem 0 0;
+  font-size: 0.85rem;
+  color: var(--text-2);
+}
+
+[data-testid="stSidebar"] a[data-testid="stPageLink-NavLink"] {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  color: var(--charcoal) !important;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+[data-testid="stSidebar"] a[data-testid="stPageLink-NavLink"] p {
+  color: var(--charcoal) !important;
+  font-weight: 500;
+}
+
+[data-testid="stSidebar"] a[data-testid="stPageLink-NavLink"]:hover {
+  background: var(--sage-soft);
+  color: var(--charcoal) !important;
+}
+
+[data-testid="stSidebar"] a[data-testid="stPageLink-NavLink"][aria-current="page"] {
+  background: var(--sage-soft);
+  color: var(--charcoal) !important;
+  box-shadow: inset 3px 0 0 var(--sage);
+}
+
+[data-testid="stSidebar"] a[data-testid="stPageLink-NavLink"][aria-current="page"] p {
+  color: var(--charcoal) !important;
+  font-weight: 600;
+}
+
+.stApp .rl-side-note {
+  margin-top: 2rem;
+  padding: 1rem 0.75rem 0;
+  border-top: 1px solid var(--border);
+}
+.stApp .rl-side-note p { margin: 0; font-size: 0.9rem; font-weight: 600; color: var(--text); }
+.stApp .rl-side-note span { font-size: 0.85rem; line-height: 1.45; color: var(--text-2); }
+
+/* ---------- Home: hero ---------- */
+.stApp .rl-hero { margin-bottom: 2.25rem; }
+
+/* ---------- The 16:9 video stage (uploader) ----------
+   A faint pickleball court is drawn behind the drop area:
+   net in the middle, kitchen lines 7 ft either side, centre lines
+   running from each kitchen line to the baseline. */
+[data-testid="stFileUploaderDropzone"] {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.1rem;
+  background: var(--cream-deep);
+  border: 1.5px dashed rgba(66, 72, 63, 0.4);
+  border-radius: 10px;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+[data-testid="stFileUploaderDropzone"]:hover {
+  border-color: var(--charcoal);
+  background: #E4E4D5;
+}
+[data-testid="stFileUploaderDropzone"]::before {
+  content: "";
+  position: absolute;
+  inset: 7%;
+  border: 1px solid var(--line-faint);
+  pointer-events: none;
+  background:
+    linear-gradient(var(--line-faint), var(--line-faint)) 50% 0 / 1.5px 100% no-repeat,
+    linear-gradient(var(--line-faint), var(--line-faint)) 34.1% 0 / 1px 100% no-repeat,
+    linear-gradient(var(--line-faint), var(--line-faint)) 65.9% 0 / 1px 100% no-repeat,
+    linear-gradient(var(--line-faint), var(--line-faint)) 0 50% / 34.1% 1px no-repeat,
+    linear-gradient(var(--line-faint), var(--line-faint)) 100% 50% / 34.1% 1px no-repeat;
+}
+[data-testid="stFileUploaderDropzone"] > * { position: relative; z-index: 1; }
+[data-testid="stFileUploaderDropzoneInstructions"] * { color: var(--text-2); }
+
+/* The Browse files button inside the drop area.
+   !important is used here because Streamlit's own button styles are strong. */
+.stApp [data-testid="stFileUploaderDropzone"] button {
+  background: var(--charcoal) !important;
+  color: var(--cream) !important;
+  border: 1px solid var(--charcoal) !important;
+  border-radius: 8px;
+  padding: 0.55rem 1.2rem;
+  font-weight: 500;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+.stApp [data-testid="stFileUploaderDropzone"] button:hover {
+  background: var(--sage) !important;
+  color: var(--charcoal) !important;
+}
+
+/* Preview of an uploaded video: same 16:9 frame */
+.stApp video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  background: var(--text);
+  border-radius: 10px;
+}
+.stApp .rl-caption {
+  margin: 0.7rem 0 0;
+  font-size: 0.95rem;
+  color: var(--text-2);
+}
+
+/* ---------- Buttons ---------- */
+.stApp .stButton button,
+.stApp .stButton button p {
+  font-weight: 500;
+}
+.stApp .stButton button {
+  border-radius: 8px;
+  border: 1px solid var(--charcoal);
+  background: transparent;
+  color: var(--text);
+  transition: background 0.15s ease, color 0.15s ease;
+}
+.stApp .stButton button p { color: inherit; }
+.stApp .stButton button:hover:not(:disabled) {
+  background: var(--sage);
+  color: var(--charcoal);
+  border-color: var(--charcoal);
+}
+.stApp .stButton button[kind="primary"],
+.stApp .stButton button[data-testid="stBaseButton-primary"] {
+  background: var(--charcoal);
+  color: var(--cream);
+}
+.stApp .stButton button[kind="primary"]:hover:not(:disabled),
+.stApp .stButton button[data-testid="stBaseButton-primary"]:hover:not(:disabled) {
+  background: var(--sage);
+  color: var(--charcoal);
+}
+.stApp .stButton button:disabled { opacity: 0.45; cursor: not-allowed; }
+
+/* "Continue to Analyse" link, styled as a primary button */
+.st-key-cta a[data-testid="stPageLink-NavLink"] {
+  width: fit-content;
+  margin-top: 1rem;
+  padding: 0.6rem 1.3rem;
+  border-radius: 8px;
+  background: var(--charcoal);
+  transition: background 0.15s ease;
+}
+.st-key-cta a[data-testid="stPageLink-NavLink"] * { color: var(--cream); font-weight: 500; }
+.st-key-cta a[data-testid="stPageLink-NavLink"]:hover { background: var(--sage); }
+.st-key-cta a[data-testid="stPageLink-NavLink"]:hover * { color: var(--charcoal); }
+
+/* ---------- Editorial sections: heading left, content right ---------- */
+.stApp .rl-section {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2.5rem;
+  margin-top: 4.5rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--border);
+}
+.stApp .rl-section--stack { display: block; }
+.stApp .rl-section--stack .rl-section-head { max-width: 38rem; margin-bottom: 2rem; }
+
+/* ---------- Stroke list ---------- */
+.stApp .rl-strokes { list-style: none; margin: 0; padding: 0; }
+.stApp .rl-strokes li {
+  display: grid;
+  grid-template-columns: 9rem 1fr;
+  gap: 1.5rem;
+  align-items: baseline;
+  margin: 0;
+  padding: 1.05rem 0;
+  border-bottom: 1px solid var(--border);
+}
+.stApp .rl-strokes li:first-child { padding-top: 0; }
+.stApp .rl-strokes .rl-stroke-name {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  color: var(--charcoal);
+}
+.stApp .rl-strokes .rl-stroke-text { color: var(--text-2); line-height: 1.5; }
+
+/* ---------- Pipeline: a rule on top, a short sage marker per stage ---------- */
+.stApp .rl-pipeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.75rem;
+}
+.stApp .rl-pipeline li {
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--charcoal);
+}
+.stApp .rl-pipeline li::before {
+  content: "";
+  display: block;
+  width: 1.75rem;
+  height: 4px;
+  margin: -2px 0 1rem;
+  background: var(--sage);
+}
+.stApp .rl-pipeline p.rl-pipe-text {
+  margin: 0 0 0.75rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--text-2);
+}
+.stApp .rl-pipeline .rl-pipe-status {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+/* ---------- Analyse: result column ---------- */
+.stApp .rl-result {
+  border-top: 2px solid var(--charcoal);
+  padding-top: 1.1rem;
+}
+.stApp .rl-result-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.7rem 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.97rem;
+}
+.stApp .rl-result-row span { color: var(--text-2); }
+.stApp .rl-result-row strong { font-weight: 500; color: var(--text); text-align: right; }
+.stApp .rl-result-gap { margin-top: 1.75rem; }
+
+/* ---------- Status list (About) ---------- */
+.stApp .rl-status { list-style: none; margin: 0; padding: 0; }
+.stApp .rl-status li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 0;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid var(--border);
+}
+.stApp .rl-status li:first-child { padding-top: 0; }
+.stApp .rl-status .rl-status-state { color: var(--text-2); text-align: right; }
+
+/* ---------- Page header and empty states ---------- */
+.stApp .rl-page-head { margin-bottom: 2.25rem; }
+.stApp .rl-empty {
+  padding: 2rem 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 900px) {
+  .stApp .rl-section { grid-template-columns: 1fr; gap: 1.25rem; }
+  .stApp .rl-pipeline { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 560px) {
+  .block-container, [data-testid="stMainBlockContainer"] { padding: 1.5rem 1rem 4rem; }
+  .stApp .rl-pipeline { grid-template-columns: 1fr; }
+  .stApp .rl-strokes li { grid-template-columns: 1fr; gap: 0.25rem; }
+  [data-testid="stFileUploaderDropzone"] { aspect-ratio: auto; min-height: 240px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .stApp * { transition: none !important; }
+}

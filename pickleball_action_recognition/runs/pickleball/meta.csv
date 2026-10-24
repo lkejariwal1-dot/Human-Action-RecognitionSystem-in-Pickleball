@@ -1,0 +1,30 @@
+path,rel,label,label_id,cache_file,detect_rate
+C:\Users\lkeja\OneDrive\Desktop\idea_lab\pickleball_dataset\Serve\Serve1.mp4,Serve/Serve1.mp4,serve,0,Serve1_a1972dc6.npz,1.0
+C:\Users\lkeja\OneDrive\Desktop\idea_lab\pickleball_dataset\Serve\Serve2.mp4,Serve/Serve2.mp4,serve,0,Serve2_b4212387.npz,1.0
+C:\Users\lkeja\OneDrive\Desktop\idea_lab\pickleball_dataset\Serve\Serve3.mp4,Serve/Serve3.mp4,serve,0,Serve3_97bfe2df.npz,1.0
+C:\Users\lkeja\OneDrive\Desktop\idea_lab\pickleball_dataset\Serve\Serve4.mp4,Serve/Serve4.mp4,serve,0,Serve4_2f49573c.npz,1.0
+C:\Users\lkeja\OneDrive\Desktop\idea_lab\pickleball_dataset\Serve\Serve5.mp4,Serve/Serve5.mp4,serve,0,Serve5_13ff7fe6.npz,1.0
+C:\Users\lkeja\OneDrive\Desktop\idea_lab\pickleball_dataset\Serve\Serve6.mp4,Serve/Serve6.mp4,serve,0,Serve6_b5a4bac5.npz,1.0
+C:\Users\lkeja\OneDrive\Desktop\idea_lab\pickleball_dataset\Serve\Serve7.mp4,Serve/Serve7.mp4,serve,0,Serve7_414cb366.npz,1.0
+C:\Users\lkeja\OneDrive\Desktop\idea_lab\pickleball_dataset\Serve\Serve8.mp4,Serve/Serve8.mp4,serve,0,Serve8_33c9c49e.npz,1.0
+C:\Users\lkeja\OneDrive\Desktop\idea_lab\pickleball_dataset\Forehand\clideo_editor_4af09844367e4704ba664c1309339e9b.mp4,Forehand/clideo_editor_4af09844367e4704ba664c1309339e9b.mp4,forehand,1,clideo_editor_4af09844367e4704ba664c1309339e9b_6cb22af7.npz,1.0
+C:\Users\lkeja\OneDrive\Desktop\idea_lab\pickleball_dataset\Forehand\clideo_editor_739beb7627424953b2617121ce1b107d.mp4,Forehand/clideo_editor_739beb7627424953b2617121ce1b107d.mp4,forehand,1,clideo_editor_739beb7627424953b2617121ce1b107d_2012c10f.npz,1.0
+C:\Users\lkeja\OneDrive\Desktop\idea_lab\pickleball_dataset\Forehand\clideo_editor_792b10f6fe6b4a78a6612f4788fd76a2.mp4,Forehand/clideo_editor_792b10f6fe6b4a78a6612f4788fd76a2.mp4,forehand,1,clideo_editor_792b10f6fe6b4a78a6612f4788fd76a2_8b32b376.npz,1.0
+C:\Users\lkeja\OneDrive\Desktop\idea_lab\pickleball_dataset\Forehand\clideo_editor_a98ae1968f6048a9bad66dbe13ef055b.mp4,Forehand/clideo_editor_a98ae1968f6048a9bad66dbe13ef055b.mp4,forehand,1,clideo_editor_a98ae1968f6048a9bad66dbe13ef055b_bc3fd84b.npz,1.0
+C:\Users\lkeja\OneDrive\Desktop\idea_lab\pickleball_dataset\Forehand\clideo_editor_c445e7c52b49447087a1a2c42c6903c7.mp4,Forehand/clideo_editor_c445e7c52b49447087a1a2c42c6903c7.mp4,forehand,1,clideo_editor_c445e7c52b49447087a1a2c42c6903c7_8016ed41.npz,1.0
+C:\Users\lkeja\OneDrive\Desktop\idea_lab\pickleball_dataset\Forehand\clideo_editor_d9a66670c76247b6968cd1057ac1085d.mp4,Forehand/clideo_editor_d9a66670c76247b6968cd1057ac1085d.mp4,forehand,1,clideo_editor_d9a66670c76247b6968cd1057ac1085d_42f7b629.npz,0.90625
+C:\Users\lkeja\OneDrive\Desktop\idea_lab\pickleball_dataset\Forehand\clideo_editor_fe8118fb45e24b81845f17eeee242899.mp4,Forehand/clideo_editor_fe8118fb45e24b81845f17eeee242899.mp4,forehand,1,clideo_editor_fe8118fb45e24b81845f17eeee242899_0e17a56b.npz,0.90625
+C:\Users\lkeja\OneDrive\Desktop\idea_lab\pickleball_dataset\Forehand\Screen Recording 2026-10-22 105154.mp4,Forehand/Screen Recording 2026-10-22 105154.mp4,forehand,1,Screen Recording 2026-10-22 105154_700848a1.npz,1.0
+C:\Users\lkeja\OneDrive\Desktop\idea_lab\pickleball_dataset\Backhand\gemini_generated_video_1692b96d.mp4,Backhand/gemini_generated_video_1692b96d.mp4,backhand,2,gemini_generated_video_1692b96d_c51bd93d.npz,1.0
+C:\Users\lkeja\OneDrive\Desktop\idea_lab\pickleball_dataset\Backhand\gemini_generated_video_60584d17.mp4,Backhand/gemini_generated_video_60584d17.mp4,backhand,2,gemini_generated_video_60584d17_4c36ba36.npz,1.0
+C:\Users\lkeja\OneDrive\Desktop\idea_lab\pickleball_dataset\Backhand\gemini_generated_video_990f9a9c.mp4,Backhand/gemini_generated_video_990f9a9c.mp4,backhand,2,gemini_generated_video_990f9a9c_deae7638.npz,1.0
+C:\Users\lkeja\OneDrive\Desktop\idea_lab\pickleball_dataset\volley\Volley_pose_1.mp4,volley/Volley_pose_1.mp4,volley,3,Volley_pose_1_6221b8a9.npz,1.0
+C:\Users\lkeja\OneDrive\Desktop\idea_lab\pickleball_dataset\volley\Volley_pose_2.mp4,volley/Volley_pose_2.mp4,volley,3,Volley_pose_2_b8d9e4b7.npz,1.0
+C:\Users\lkeja\OneDrive\Desktop\idea_lab\pickleball_dataset\volley\Volley_pose_3.mp4,volley/Volley_pose_3.mp4,volley,3,Volley_pose_3_2c74d3b2.npz,1.0
+C:\Users\lkeja\OneDrive\Desktop\idea_lab\pickleball_dataset\Dink\Screen Recording 2026-10-22 104826.mp4,Dink/Screen Recording 2026-10-22 104826.mp4,dink,4,Screen Recording 2026-10-22 104826_435a6d0c.npz,1.0
+C:\Users\lkeja\OneDrive\Desktop\idea_lab\pickleball_dataset\Dink\Screen Recording 2026-10-22 105403.mp4,Dink/Screen Recording 2026-10-22 105403.mp4,dink,4,Screen Recording 2026-10-22 105403_644e3307.npz,1.0
+C:\Users\lkeja\OneDrive\Desktop\idea_lab\pickleball_dataset\Dink\Screen Recording 2026-10-22 105515.mp4,Dink/Screen Recording 2026-10-22 105515.mp4,dink,4,Screen Recording 2026-10-22 105515_04ad3335.npz,1.0
+C:\Users\lkeja\OneDrive\Desktop\idea_lab\pickleball_dataset\Dink\Screen Recording 2026-10-22 105645.mp4,Dink/Screen Recording 2026-10-22 105645.mp4,dink,4,Screen Recording 2026-10-22 105645_ff62534e.npz,1.0
+C:\Users\lkeja\OneDrive\Desktop\idea_lab\pickleball_dataset\Dink\Screen Recording 2026-10-22 105756.mp4,Dink/Screen Recording 2026-10-22 105756.mp4,dink,4,Screen Recording 2026-10-22 105756_585c79ea.npz,1.0
+C:\Users\lkeja\OneDrive\Desktop\idea_lab\pickleball_dataset\Dink\Screen Recording 2026-10-22 105953.mp4,Dink/Screen Recording 2026-10-22 105953.mp4,dink,4,Screen Recording 2026-10-22 105953_0d09a7c8.npz,1.0
+C:\Users\lkeja\OneDrive\Desktop\idea_lab\pickleball_dataset\Dink\Video Project.mp4,Dink/Video Project.mp4,dink,4,Video Project_e48e4c85.npz,1.0

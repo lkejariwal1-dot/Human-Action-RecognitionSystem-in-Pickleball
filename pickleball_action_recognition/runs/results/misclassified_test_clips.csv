@@ -1,0 +1,4 @@
+path,label,pred,confidence
+C:\Users\lkeja\OneDrive\Desktop\idea_lab\pickleball_dataset\Serve\Serve5.mp4,serve,volley,0.20530784
+C:\Users\lkeja\OneDrive\Desktop\idea_lab\pickleball_dataset\Forehand\forehand3.mp4,forehand,volley,0.20557626
+C:\Users\lkeja\OneDrive\Desktop\idea_lab\pickleball_dataset\Backhand\backhand4.mp4,backhand,volley,0.20560072

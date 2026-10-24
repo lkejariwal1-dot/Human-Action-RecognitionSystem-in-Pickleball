@@ -1,0 +1,7 @@
+path,rel,label,label_id,cache_file,detect_rate
+C:\Users\lkeja\OneDrive\Desktop\idea_lab\pickleball_dataset\Dink\dink8.mp4,Dink/dink8.mp4,dink,4,dink8_cf9a7dae.npz,1.0
+C:\Users\lkeja\OneDrive\Desktop\idea_lab\pickleball_dataset\Serve\Serve7.mp4,Serve/Serve7.mp4,serve,0,Serve7_414cb366.npz,1.0
+C:\Users\lkeja\OneDrive\Desktop\idea_lab\pickleball_dataset\volley\Volley_pose_4.mp4,volley/Volley_pose_4.mp4,volley,3,Volley_pose_4_f4834461.npz,1.0
+C:\Users\lkeja\OneDrive\Desktop\idea_lab\pickleball_dataset\volley\Volley_pose_6.mp4,volley/Volley_pose_6.mp4,volley,3,Volley_pose_6_526715cf.npz,1.0
+C:\Users\lkeja\OneDrive\Desktop\idea_lab\pickleball_dataset\Backhand\backhand8.mp4,Backhand/backhand8.mp4,backhand,2,backhand8_341c72aa.npz,1.0
+C:\Users\lkeja\OneDrive\Desktop\idea_lab\pickleball_dataset\Forehand\forehand5.mp4,Forehand/forehand5.mp4,forehand,1,forehand5_d614b1d1.npz,1.0
